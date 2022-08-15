@@ -25,8 +25,8 @@ export async function before(m) {
             m.reply(`*Dikit Lagi!*`)
         else
             conn.sendButton(m.chat, `*Salah!*`, author, null, [
-                ['hint', '/hint'],
-                ['nyerah', 'menyerah']
+                ['Bantuan', '/hint'],
+                ['Menyerah', 'menyerah']
             ], m)
     }
     return !0
@@ -34,5 +34,5 @@ export async function before(m) {
 export const exp = 0
 
 const buttonTebakgambar = [
-    ['tebakgambar', '/tebakgambar']
+    ['Main Lagi', '/tebakgambar']
 ]

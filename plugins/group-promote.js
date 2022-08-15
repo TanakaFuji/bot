@@ -7,12 +7,11 @@ let handler = async (m, { conn, participants }) => {
             const res = await conn.groupParticipantsUpdate(m.chat, [user], 'promote')
             await delay(1 * 1000)
         }
-    m.reply('Succes')
-
+    m.reply('Berhasil mempromote user!')
 }
-handler.help = ['promote @tag']
+handler.help = ['promote', 'pm'].map(v => v + ' @user')
 handler.tags = ['group']
-handler.command = /^(promote)$/i
+handler.command = /^(promote|pm)$/i
 
 handler.admin = true
 handler.group = true

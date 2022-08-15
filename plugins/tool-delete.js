@@ -1,7 +1,7 @@
 let handler = function (m) {
     if (!m.quoted) throw false
     let { chat, fromMe, isBaileys } = m.quoted
-    if (!fromMe) throw false
+    //if (!fromMe) throw false
     //if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
     conn.sendMessage(chat, { delete: m.quoted.vM.key })
 }

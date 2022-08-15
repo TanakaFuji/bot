@@ -21,7 +21,7 @@ Bonus: ${poin} XP
         json, poin,
         setTimeout(() => {
             if (conn.tebakgambar[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, author, null, [
-                ['tebakgambar', '/tebakgambar']
+                ['Main Lagi', '/tebakgambar']
             ], conn.tebakgambar[id][0])
             delete conn.tebakgambar[id]
         }, timeout)
@@ -34,6 +34,6 @@ handler.command = /^tebakgambar/i
 export default handler
 
 const buttons = [
-    ['hint', '/hint'],
-    ['nyerah', 'menyerah']
+    ['Bantuan', '/hint'],
+    ['Menyerah', 'menyerah']
 ]
