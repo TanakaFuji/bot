@@ -493,7 +493,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `SUBSCRIBE`,
-                        url: 'https://youtubr.com/c/LeonGanz'
+                        url: 'https://youtubr.com/c/DUCK_Tys'
                     }
                 },
                 {
